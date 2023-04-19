@@ -1,0 +1,7 @@
+- name: Install Validus Diagnostics RPMs
+  become: true
+  yum:
+    state: latest
+    name:
+      - validus-diagnostics-api
+      - validus-diagnostics-ui
